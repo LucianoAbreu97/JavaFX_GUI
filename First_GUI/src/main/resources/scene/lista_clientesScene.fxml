@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.first_gui.ListaClientesController">
+   <children>
+      <GridPane layoutY="8.0" prefHeight="584.0" prefWidth="1000.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="162.0" minHeight="0.0" prefHeight="22.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="508.0" minHeight="10.0" prefHeight="502.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.rowIndex="2">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="hist_buttonListaClientes" mnemonicParsing="false" text="Historico" GridPane.halignment="CENTER" />
+                  <Button fx:id="remover_buttonListaClientes" mnemonicParsing="false" text="Remover" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                  <Label fx:id="error_msgListaClientes" text="Error" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+               </children>
+            </GridPane>
+            <Label text="Lista de Clientes" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tabelaListaClientes" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="nome_tabListaClientes" prefWidth="142.0" text="Nome" />
+                  <TableColumn fx:id="sob_nome_tabListaClientes" prefWidth="96.0" text="Sobrenome" />
+                <TableColumn fx:id="cpf_tabListaClientes" minWidth="5.0" prefWidth="77.0" text="CPF" />
+                  <TableColumn fx:id="tel_tabListaClientes" prefWidth="88.0" text="Telefone" />
+                  <TableColumn fx:id="email_tabListaClientes" prefWidth="128.0" text="E-mail" />
+                  <TableColumn fx:id="rua_tabListaClientes" prefWidth="183.0" text="Rua" />
+                  <TableColumn fx:id="bairro_tabListaClientes" prefWidth="222.0" text="Bairro" />
+                  <TableColumn fx:id="num_tabListaClientes" prefWidth="63.0" text="Numero" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

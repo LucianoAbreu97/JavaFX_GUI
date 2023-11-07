@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HistoricoClienteController">
+   <children>
+      <GridPane prefHeight="500.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="462.0" minHeight="10.0" prefHeight="462.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Histórico" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tabelaHistCliente" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="nome_tabHistCliente" prefWidth="142.0" text="Nome" />
+                <TableColumn fx:id="sob_nomeHistCliente" prefWidth="178.0" text="Sobrenome" />
+                  <TableColumn fx:id="cpfHistCliente" prefWidth="132.0" text="CPF" />
+                  <TableColumn fx:id="num_pedidoHistCliente" prefWidth="115.0" text="Número Pedido" />
+                  <TableColumn fx:id="data_pedidoHistCliente" prefWidth="130.0" text="Data Pedido" />
+                  <TableColumn fx:id="valor_pedidoHistCliente" prefWidth="102.0" text="Valor Pedido" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

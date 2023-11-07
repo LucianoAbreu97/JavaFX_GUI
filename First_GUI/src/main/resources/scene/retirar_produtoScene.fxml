@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.first_gui.RetirarProdutoController">
+   <children>
+      <GridPane layoutY="8.0" prefHeight="586.0" prefWidth="1000.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="162.0" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="432.0" minHeight="10.0" prefHeight="405.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="93.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="149.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="878.0" minWidth="10.0" prefWidth="831.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Nome" GridPane.halignment="CENTER" />
+                        <TextField fx:id="nome_boxRetProduto" maxWidth="800.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+                  <Label text="Retirar Produto" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="2">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="96.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="219.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="382.0" minWidth="10.0" prefWidth="270.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="234.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Lote" GridPane.halignment="CENTER" />
+                  <Label fx:id="error_msgRetProduto" text="Error" textFill="RED" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                  <TextField fx:id="lote_boxRetProduto" GridPane.columnIndex="1" />
+                  <Button fx:id="remover_buttonRetProduto" mnemonicParsing="false" text="Remover" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+               </children>
+            </GridPane>
+            <TableView fx:id="tabela_RetProduto" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="id_tabRetProduto" prefWidth="37.0" text="ID" />
+                <TableColumn fx:id="nome_tabRetProduto" prefWidth="111.0" text="Nome" />
+                  <TableColumn fx:id="fab_tabRetProduto" prefWidth="70.0" text="Fabricante" />
+                  <TableColumn fx:id="cat_tabRetProduto" prefWidth="83.0" text="Categoria" />
+                  <TableColumn fx:id="vol_tabRetProduto" prefWidth="112.0" text="Volume" />
+                  <TableColumn fx:id="tipo_tabRetProduto" prefWidth="112.0" text="Tipo" />
+                  <TableColumn fx:id="data_fab_tabRetProduto" prefWidth="106.0" text="Data Fabricação" />
+                  <TableColumn fx:id="data_venc_tabRetProduto" prefWidth="104.0" text="Data Vencimento" />
+                  <TableColumn fx:id="lote_tabRetProduto" prefWidth="158.0" text="Lote" />
+                  <TableColumn fx:id="valor_tabRetProduto" prefWidth="106.0" text="Valor" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</Pane>
