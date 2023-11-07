@@ -48,7 +48,7 @@ public class CadastroClienteController {
     
     @FXML
     public void initialize() {
-        
+        //Choice Box
         ObservableList<String> emails = FXCollections.observableArrayList(
         "gmail.com","gmail.com.br","outlook.com","outlook.com.br",
         "yahoo.com","yahoo.com.br");

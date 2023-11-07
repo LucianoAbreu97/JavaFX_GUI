@@ -27,7 +27,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="hist_buttonListaClientes" mnemonicParsing="false" text="Historico" GridPane.halignment="CENTER" />
+                  <Button fx:id="hist_buttonListaClientes" mnemonicParsing="false" text="Historico" GridPane.halignment="CENTER" onAction="#handleHistoricoButton" />
                   <Button fx:id="remover_buttonListaClientes" mnemonicParsing="false" text="Remover" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
                   <Label fx:id="error_msgListaClientes" text="Error" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                </children>

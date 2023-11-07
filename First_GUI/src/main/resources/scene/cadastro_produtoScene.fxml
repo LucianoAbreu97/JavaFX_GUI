@@ -15,8 +15,8 @@
           <RowConstraints maxHeight="120.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="314.0" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="169.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="238.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="151.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <GridPane prefHeight="174.0" prefWidth="800.0" GridPane.rowIndex="2">
@@ -77,7 +77,7 @@
                   <DatePicker fx:id="data_fabCadProduto" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
                </children>
             </GridPane>
-            <GridPane GridPane.rowIndex="3">
+            <GridPane prefHeight="200.0" prefWidth="800.0" GridPane.rowIndex="3">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -120,7 +120,19 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label fx:id="error_msgCadProduto" text="Error" textFill="RED" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <GridPane prefHeight="43.0" prefWidth="800.0" GridPane.rowIndex="4">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="error_msgCadProduto" text="Error" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <Button fx:id="cad_buttonCadProduto" mnemonicParsing="false" text="Cadastrar" GridPane.halignment="CENTER" />
+               </children>
+            </GridPane>
          </children>
       </GridPane>
    </children>

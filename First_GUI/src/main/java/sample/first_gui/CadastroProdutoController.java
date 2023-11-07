@@ -1,52 +1,67 @@
 package sample.first_gui;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
 public class CadastroProdutoController {
 
     @FXML
-    private TextField sobrenomeCadCliente;
+    private TextField valorCadProduto;
 
     @FXML
-    private ChoiceBox<?> email_choice_boxCadCliente;
+    private TextField tipoCadProduto;
 
     @FXML
-    private TextField end_numCadCliente;
+    private Label error_msgCadProduto;
 
     @FXML
-    private TextField nomeCadCliente;
+    private Button cad_buttonCadProduto;
 
     @FXML
-    private TextField end_ruaCadCliente;
+    private TextField estoqueCadProduto;
 
     @FXML
-    private TextField end_bairroCadCliente;
+    private ChoiceBox<String> vol_tipoCadProduto;
 
     @FXML
-    private Button cad_buttonCadCliente;
+    private TextField nomeCadProduto;
 
     @FXML
-    private TextField emailCadCliente;
+    private DatePicker data_fabCadProduto;
 
     @FXML
-    private TextField cpfCadCliente;
+    private TextField categCadProduto;
 
     @FXML
-    private TextField end_compCadCliente;
+    private RadioButton controleCadProduto;
 
     @FXML
-    private TextField telCadCliente;
+    private DatePicker data_vencCadProduto;
 
     @FXML
-    private Label error_msgCadCliente;
+    private TextField loteCadProduto;
+
+    @FXML
+    private TextField vol_unidadeCadProduto;
+
+    @FXML
+    private TextField fabricanteCadProduto;
     
     @FXML
     public void initialize() {
+        //Choice Box
+        ObservableList<String> unidade = FXCollections.observableArrayList(
+        "mg", "g", "kg", "mL", "L", "UI");
         
+        vol_tipoCadProduto.setItems(unidade);
+        vol_tipoCadProduto.setValue("mg");
     }
 
 }

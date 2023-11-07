@@ -7,4 +7,5 @@ module-info.class
 sample\first_gui\LoginController.class
 sample\first_gui\RetirarProdutoController.class
 sample\first_gui\App.class
+sample\first_gui\HistoricoClienteController.class
 sample\first_gui\ListaClientesController.class
